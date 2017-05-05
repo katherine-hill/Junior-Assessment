@@ -1,13 +1,12 @@
 CREATE DATABASE ;
 
-DROP TABLE IF EXISTS `new table`;
+DROP TABLE IF EXISTS `new_table`;
 
-CREATE TABLE `new table` (
-  `id` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+CREATE TABLE `new_table` (
+  `id` INTEGER PRIMARY KEY,
   `first_name` CHAR(20) NULL DEFAULT NULL,
   `last_name` CHAR(20) NULL DEFAULT NULL,
-  `home` CHAR(20) NULL DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  `home` CHAR(20) NULL DEFAULT NULL
 );
 
 INSERT INTO new_table (first_name, last_name, home) VALUES ('Rose','Tyler','Earth');
