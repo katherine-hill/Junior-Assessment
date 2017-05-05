@@ -1,17 +1,28 @@
 body{
   background: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 table{
   height: 300px;
-  border: 10px double #fff;
+
+}
+th{
+  width: 32%;
+  background: #fff;
 }
 tr{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  width: 300px;
+  width: 400px;
 }
 td{
+  border-bottom: 2px solid #fff;
+  text-align: center;
+  padding: 20px;
+  width: 30%;
   padding: 5px;
 
 }
