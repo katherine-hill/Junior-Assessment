@@ -16,7 +16,7 @@
                 for (let header in tableData[i]) {
                     if (tableData[i].hasOwnProperty(header) && columnHeaders.indexOf(header) == -1) {
                         columnHeaders.push(header);
-                        //if tableHeader is declared as a global variable, there will be one th that each header is added to
+                        //if tableHeader is declared at the top of the construct, there will be one th that each header is added to
                         let tableHeader = document.createElement('th');
                         tableHeader.appendChild(document.createTextNode(header));
                         tableRow.appendChild(tableHeader);
@@ -31,7 +31,7 @@
         function fillTable(tableData) {
             for (let i = 0; i < tableData.length; ++i) {
                 for (let j = 0; j < columnHeaders.length; ++j) {
-                    //if tableCell is declared as a global variable, there will be one massive td
+                    //if tableCell is declared at the top of the construct, there will be one massive td
                     let tableCell = document.createElement('td');
                     tableCell.appendChild(document.createTextNode(tableData[i][columnHeaders[j]] || ''));
                     tableRow.appendChild(tableCell);
