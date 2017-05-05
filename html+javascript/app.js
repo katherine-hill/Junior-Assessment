@@ -30,7 +30,6 @@
         ///////////////////////////////////////////
         function fillTable(tableData, table) {
             for (let i = 0; i < tableData.length; ++i) {
-
                 for (let j = 0; j < columnHeaders.length; ++j) {
                     //if tableCell is declared as a global variable, there will be one massive td
                     let tableCell = document.createElement('td');
