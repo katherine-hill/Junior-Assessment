@@ -1,0 +1,17 @@
+body{
+  background: #eee;
+}
+table{
+  height: 300px;
+  border: 10px double #fff;
+}
+tr{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 300px;
+}
+td{
+  padding: 5px;
+
+}
